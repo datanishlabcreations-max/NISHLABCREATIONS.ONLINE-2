@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Workbench</title>
+<meta name="description" content="Ask about a course, pitch a client project, or just say hello.">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Workbench logo">
+      <span>WORKBENCH<small>PRACTICAL DEV TRAINING</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost">Book a call</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="wrap">
+      <p class="fig-label">GET IN TOUCH</p>
+      <h1>Ask about a course, or pitch a project.</h1>
+      <p>Whether you're picking a course or bringing a real client brief, tell us a bit about it below.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:56px;">
+    <div class="wrap contact-grid">
+
+      <form id="contact-form" class="panel" style="padding:36px;" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name">
+          <span class="field-error"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <span class="field-error"></span>
+        </div>
+        <div class="field">
+          <label for="topic">What's this about</label>
+          <select id="topic" name="topic">
+            <option>Choosing a course</option>
+            <option>Enrollment &amp; pricing</option>
+            <option>Pitching a client project</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="A few details help us reply with something useful."></textarea>
+          <span class="field-error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-arrow">Send message</button>
+        <div id="form-status" class="form-status" role="status"></div>
+      </form>
+
+      <div>
+        <div class="contact-info-item">
+          <p class="fig-label">EMAIL</p>
+          <a href="mailto:hello@workbench.example">hello@workbench.example</a>
+        </div>
+        <div class="contact-info-item">
+          <p class="fig-label">RESPONSE TIME</p>
+          <span>Within one business day, most days sooner.</span>
+        </div>
+        <div class="contact-info-item">
+          <p class="fig-label">FOR CURRENT STUDENTS</p>
+          <span>Use your course workspace instead of this form — it gets you a faster reply.</span>
+        </div>
+        <div class="contact-info-item">
+          <p class="fig-label">CLIENT PROJECT PITCHES</p>
+          <span>Select projects each term. Tell us the problem, not the tech stack — we'll figure that part out together.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="images/logo.png" alt="Workbench logo"><span>WORKBENCH</span></a>
+        <p>Project-based courses and real client work, run out of one small studio.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <a href="courses.html">Frontend</a>
+        <a href="courses.html">Backend</a>
+        <a href="courses.html">Data</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:hello@workbench.example">hello@workbench.example</a>
+        <a href="contact.html">Contact form</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Workbench. All rights reserved.</span>
+      <span>Built by hand, one commit at a time.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
